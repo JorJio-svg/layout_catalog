@@ -1,14 +1,5 @@
-$base-font-weight: 500;
-$base-font-size: 12px;
-
-body {
-  font-family: Roboto, sans-serif;
-  font-size: $base-font-size;
-  font-weight: $base-font-weight;
-  margin: 0;
-}
-
 @import 'utils/variables';
+@import 'utils/fonts';
 @import 'utils/mixins';
 @import 'blocks/header';
 @import 'blocks/main';

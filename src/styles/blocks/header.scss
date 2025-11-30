@@ -27,6 +27,7 @@
     }
   }
   &__link {
+    position: relative;
     line-height: $header-height;
     text-decoration: none;
     text-transform: uppercase;
@@ -35,15 +36,15 @@
     color: $nav-link-color;
 
     &.is-active {
-      position: relative;
       color: $blue-color;
+      padding-bottom: $underline-position;
 
       &::after {
         position: absolute;
         content: '';
         left: 0;
         right: 0;
-        bottom: $underline-position;
+        bottom: 0;
         height: $underline-size;
         border-radius: $underline-form;
         background-color: $blue-color;

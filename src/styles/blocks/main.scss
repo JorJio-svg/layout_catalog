@@ -1,6 +1,5 @@
 .catalog {
   display: grid;
-  justify-content: center;
   gap: $catalog-gap;
   grid-template-columns: $card-width;
 
@@ -17,6 +16,10 @@
   @include on-desktop {
     grid-template-columns: repeat(4, $card-width);
   }
+
+  @include on-desktop-1200px {
+    justify-content: center;
+  }
 }
 
 .card {
@@ -25,7 +28,7 @@
   box-sizing: border-box;
   width: $card-width;
   border-radius: $card-form;
-  border: $card-border solid $card-brdr-color;
+  border: $border-size solid $card-brdr-color;
   transition: $transition;
 
   &__content {
@@ -138,8 +141,8 @@
     &:hover {
       box-sizing: border-box;
       color: $blue-color;
-      background-color: #fff;
-      border: 1px solid $blue-color;
+      background-color: $button-text-color;
+      border: $border-size solid $blue-color;
     }
   }
 }
