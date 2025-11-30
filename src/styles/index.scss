@@ -1,7 +1,10 @@
+$base-font-weight: 500;
+$base-font-size: 12px;
+
 body {
   font-family: Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
   margin: 0;
 }
 

@@ -20,14 +20,14 @@
   }
 
   &__item {
-    padding-right: 20px;
+    padding-right: $nav-item-padding;
 
     &:last-child {
       padding-right: 0;
     }
   }
   &__link {
-    line-height: 60px;
+    line-height: $header-height;
     text-decoration: none;
     text-transform: uppercase;
     transition: $transition;
@@ -43,9 +43,9 @@
         content: '';
         left: 0;
         right: 0;
-        bottom: -23px;
-        height: 4px;
-        border-radius: 8px;
+        bottom: $underline-position;
+        height: $underline-size;
+        border-radius: $underline-form;
         background-color: $blue-color;
       }
     }
