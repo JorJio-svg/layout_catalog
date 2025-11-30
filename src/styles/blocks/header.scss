@@ -34,24 +34,24 @@
 
     color: $nav-link-color;
 
+    &.is-active {
+      position: relative;
+      color: $blue-color;
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: -23px;
+        height: 4px;
+        border-radius: 8px;
+        background-color: $blue-color;
+      }
+    }
+
     &:hover {
       color: $blue-color;
     }
-  }
-}
-
-.is-active {
-  position: relative;
-  color: $blue-color;
-
-  &::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: -23px;
-    height: 4px;
-    border-radius: 8px;
-    background-color: $blue-color;
   }
 }

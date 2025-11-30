@@ -1,7 +1,7 @@
 .catalog {
   display: grid;
   justify-content: center;
-  gap: 48px 46px;
+  gap: 46px 48px;
   grid-template-columns: $card-width;
 
   padding: 50px 40px;
@@ -25,7 +25,7 @@
   box-sizing: border-box;
   width: 200px;
   border-radius: 5px;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $card-brdr-color;
   transition: $transition;
 
   &__content {
@@ -58,7 +58,7 @@
     line-height: 18px;
   }
 
-  :hover {
+  &:hover {
     transform: scale(1.2);
   }
 
